@@ -12,24 +12,12 @@ echo '<p> Base de dados criada com sucesso </p>';
 //Abrir a base de dados para adicionar as tabelas
 $ligacao = new PDO("mysql:dbname=$base_dados;host=$host", $user, $password);
 
-$sql_REGISTO = "CREATE TABLE REGISTO (
-    id_registo INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-    email VARCHAR(50),
-    utilizador VARCHAR(25),
-    password VARCHAR(255),
-    password2 VARCHAR(255)
-    )";
-
-$motor = $ligacao->prepare($sql_REGISTO);
-$motor->execute();
 
 $sql_USER= "CREATE TABLE USER ( 
     id_user INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-    id_registo INT NOT NULL,
     utilizador VARCHAR(25),
     pass VARCHAR(255),
-    email VARCHAR(50),
-    FOREIGN KEY (id_registo) REFERENCES REGISTO(id_registo)
+    nome VARCHAR(255)
     )";
 
 $motor = $ligacao->prepare($sql_USER);

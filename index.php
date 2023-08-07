@@ -21,9 +21,9 @@ include "header.php";
         <br><br>
         <h3 class="title">Login</h3>
 
-        Email:<br><input type="text" size="20" name="text_email" placeholder="escreva aqui o seu email"><br><br>
+        Email:<br><input type="text" size="20" name="text_utilizador" placeholder="escreva aqui o seu email"><br><br>
 
-        Password<br><input type="password" size="20" name="text_password_1" placeholder="escreva aqui a sua password"><br><br>
+        Password<br><input type="password" size="20" name="text_password" placeholder="escreva aqui a sua password"><br><br>
 
         <button class="btn-login" type="submit"><span class="text-body">Entrar</span></button><br><br>
 
