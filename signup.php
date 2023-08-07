@@ -29,12 +29,6 @@ function ApresentaFormulario()
             Password:<span class="required"></span><br><input type="password" size="20" name="text_password_1" placeholder="escreva a sua password aqui" required><br><br>
             Confirm Password:<span class="required"></span><br><input type="password" size="20" name="text_password_2" placeholder="confirme a sua password" required><br><br>
 
-            Selecione o seu User Type:<span class="required"></span><br>
-            <select name="user_type" required>
-                <option value="user">User</option>
-                <option value="admin">Admin</option>
-            </select><br><br>
-
             <button class="btn-register" type="submit" name="btn_submit" value="Registar">Register Now</button><br><br>
 
             Já tem uma conta? <a href="index.php" class="lnow">Login</a><br><br>
