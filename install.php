@@ -15,9 +15,9 @@ $ligacao = new PDO("mysql:dbname=$base_dados;host=$host", $user, $password);
 
 $sql_USER= "CREATE TABLE USER ( 
     id_user INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(255),
     utilizador VARCHAR(25),
-    pass VARCHAR(255),
-    nome VARCHAR(255)
+    pass VARCHAR(255)
     )";
 
 $motor = $ligacao->prepare($sql_USER);
