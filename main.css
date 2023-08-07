@@ -1,0 +1,165 @@
+
+/* HEADER*/
+.custom-header {
+    background-color: lightgrey;
+    border-radius: 20px;
+}
+
+.custom-header-width {
+    max-width: 900px; /* You can adjust this value as needed */
+    margin: 0 auto; /* To center the header horizontally on the page */
+}
+
+.custom-logo {
+    width: 300px; /* Set the desired width of the logo */
+    height: auto; /* Maintain aspect ratio */
+    padding: 10px;
+}
+
+/* Style the login button */
+.login-button {
+    padding: 10px 20px;
+    background-color: #30c637; /* You can use any color you prefer */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-button:hover {
+    background-color: #1873d4; /* You can change the hover color if desired */
+}
+
+
+ 
+/* NAVBAR*/
+
+.custom-navbar {
+    background-color: rgb(248, 246, 246);
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 290px; /* You can adjust the left margin as needed */
+    margin-top: 100px;
+    width: 200px; /* You can set the width of the navbar as desired */
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .custom-navbar .nav-item {
+    margin-bottom: 5px;
+  }
+  
+  .custom-navbar .nav-link {
+    color: #007bff; /* Set the desired link color */
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-align: center;
+  }
+  
+  .custom-navbar .nav-link.active,
+  .custom-navbar .nav-link:hover {
+    background-color: #30c637; /* Set the background color for active and hover states */
+    color: #fff; /* Set the text color for active and hover states */
+  }
+  
+
+
+/* LOGIN CONTAINER */
+.login-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column; /* Stack form elements vertically */
+    margin-left: 200px; /* You can adjust the left margin as needed */
+    border-radius: 10px;
+    margin-top: -320px;
+    max-width: 300px; /* You can set the maximum width of the container as desired */
+    padding: 20px; /* Add padding to the container to create space around the content */
+}
+
+.login-bg {
+    background-color: #f5f5f5; /* Set the desired background color for the form background */
+    border-radius: 10px;
+    padding: 60px; /* Add padding to the form background to create space around the content */
+    margin-left: 200px; /* You can adjust the left margin as needed */
+}
+
+/* Style the form elements as needed */
+.form_login {
+    text-align: center; /* Center form elements within the form */
+}
+
+.logo {
+    /* Add styles for the logo image here */
+}
+
+.title {
+    /* Add styles for the title here */
+}
+
+/* Custom button styles */
+.btn-login {
+    padding: 10px 20px;
+    background-color: #30c637; /* You can use any color you prefer */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-login:hover {
+    background-color: #1873d4; /* You can change the hover color if desired */
+}
+
+
+
+/* SIGNUP CONTAINER */
+.signup-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column; /* Stack form elements vertically */
+    margin-left: 800px; /* You can adjust the left margin as needed */
+    border-radius: 10px;
+    margin-top: -300px;
+    max-width: 400px; /* You can set the maximum width of the container as desired */
+    padding: 20px; /* Add padding to the container to create space around the content */
+    background-color: #f5f5f5; /* Set the desired background color for the container */
+}
+
+.signup-bg {
+    padding: 40px; /* Add padding to the form background to create space around the content */
+}
+
+/* Style the form elements as needed */
+.form_signup {
+    text-align: center; /* Center form elements within the form */
+}
+
+.logo {
+    /* Add styles for the logo image here */
+}
+
+.title {
+    /* Add styles for the title here */
+}
+
+/* Custom button styles */
+.btn-register {
+    padding: 10px 20px;
+    background-color: #30c637; /* You can use any color you prefer */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-register:hover {
+    background-color: #1873d4; /* You can change the hover color if desired */
+}
+
