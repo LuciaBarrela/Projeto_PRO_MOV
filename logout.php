@@ -21,10 +21,6 @@ include 'header.php';
             </div>
     ';
 
-    
-
-
-
 
 ?>
 
