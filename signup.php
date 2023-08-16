@@ -161,7 +161,7 @@ function RegistarUtilizador()
 
  
 
-        $sql = "INSERT INTO USER VALUES (:id_user, :utilizador, :pass, :nome)";
+        $sql = "INSERT INTO USER VALUES (:id_user, :nome, :utilizador, :pass)";
 
  
 
@@ -169,11 +169,12 @@ function RegistarUtilizador()
 
         $motor->bindParam(":id_user", $id_temp, PDO::PARAM_INT);
 
+        $motor->bindParam(":nome", $nome, PDO::PARAM_STR);
+
         $motor->bindParam(":utilizador", $utilizador, PDO::PARAM_STR);
 
         $motor->bindParam(":pass", $passwordEncriptada, PDO::PARAM_STR);
 
-        $motor->bindParam(":nome", $nome, PDO::PARAM_STR);
 
 
         $motor->execute();
