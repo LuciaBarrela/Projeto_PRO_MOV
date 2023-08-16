@@ -85,8 +85,6 @@ function RegistarUtilizador()
 
     }
 
- 
-
     if ($erro) {
 
         ApresentaFormulario();
@@ -94,8 +92,6 @@ function RegistarUtilizador()
         exit;
 
     }
-
- 
 
     // Processo do registo de um novo utilizador
 
@@ -128,10 +124,6 @@ function RegistarUtilizador()
         Já existe uma conta associada a este email!
 
       </div>';
-
- 
-
-      
 
         $ligacao = null;
 
