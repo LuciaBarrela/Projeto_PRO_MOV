@@ -23,18 +23,18 @@ function ApresentaFormulario()
 {
     // form registo
     echo '
-    <div class="signup-container">
+    <div class="centered-container signup-container">
     <div class="signup-bg">
         <form class="form_signup" method="POST" action="signup.php?a=signup" enctype="multipart/form-data">
-            <br>
+            <br><br><br><br>
             <h3 class="title">Registo</h3>
             <br><br>
-            Nome:<span class="required"></span><br><input type="text" size="20" name="text_nome" placeholder="escreva o seu nome aqui" required><br><br>
-            Email:<span class="required"></span><br><input type="email" size="20" name="email_utilizador" placeholder="escreva o seu email aqui" required><br><br>
-            Password:<span class="required"></span><br><input type="password" size="20" name="text_password_1" placeholder="escreva a sua password aqui" required><br><br>
-            Confirm Password:<span class="required"></span><br><input type="password" size="20" name="text_password_2" placeholder="confirme a sua password" required><br><br>
+            Nome:<span class="required"></span><br><input type="text" size="20" name="text_nome" placeholder="o seu nome aqui" required><br><br>
+            Email:<span class="required"></span><br><input type="email" size="20" name="email_utilizador" placeholder="o seu email aqui" required><br><br>
+            Password:<span class="required"></span><br><input type="password" size="20" name="text_password_1" placeholder="a sua password aqui" required><br><br>
+            Confirme  Password:<span class="required"></span><br><input type="password" size="20" name="text_password_2" placeholder="confirme a sua password" required><br><br>
 
-            <button class="btn-register" type="submit" name="btn_submit" value="Registar">Register Now</button><br><br>
+            <button class="btn-register" type="submit" name="btn_submit" value="Registar">Registar</button><br><br>
 
             Já tem uma conta? <a href="index.php" class="lnow">Login</a><br><br>
         </form>

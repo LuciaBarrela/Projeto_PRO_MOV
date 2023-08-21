@@ -1,141 +1,49 @@
-<!-- Remove the container if you want to extend the Footer to full width. -->
-<div class="container my-5">
-  <!-- Footer -->
-  <footer
-          class="text-center text-lg-start text-dark"
-          style="background-color: #ECEFF1"
-          >
-    <!-- Section: Social media -->
-    <section
-             class="d-flex justify-content-between p-4 text-white"
-             style="background-color: #30c637"
-             >
-      <!-- Left -->
-      <div class="me-5">
-        <span>Redes Sociais:</span>
-      </div>
-      <!-- Left -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
 
-      <!-- Right -->
-      <div>
-        <a href="" class="text-white me-4">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="" class="text-white me-4">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="" class="text-white me-4">
-          <i class="fab fa-google"></i>
-        </a>
-        <a href="" class="text-white me-4">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="" class="text-white me-4">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="" class="text-white me-4">
-          <i class="fab fa-github"></i>
-        </a>
-      </div>
-      <!-- Right -->
-    </section>
-    <!-- Section: Social media -->
+        /* Add any additional custom styles here */
+    </style>
+</head>
+<body>
 
-    <!-- Section: Links  -->
-    <section class="">
-      <div class="container text-center text-md-start mt-5">
-        <!-- Grid row -->
-        <div class="row mt-3">
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-            <!-- Content -->
-            <h6 class="text-uppercase fw-bold">Projeto PRO_MOV</h6>
-            <hr
-                class="mb-4 mt-0 d-inline-block mx-auto"
-                style="width: 60px; background-color: #7c4dff; height: 2px"
-                />
-            <p>
-              Programa de gestão de turmas a aplicar ao projeto PRO_MOV.
-            </p>
-          </div>
-          <!-- Grid column -->
 
-          <!-- Grid column -->
-          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold">Exemplo 1</h6>
-            <hr
-                class="mb-4 mt-0 d-inline-block mx-auto"
-                style="width: 60px; background-color: #7c4dff; height: 2px"
-                />
-            <p>
-              <a href="#!" class="text-dark">link</a>
-            </p>
-            <p>
-              <a href="#!" class="text-dark">link</a>
-            </p>
-            <p>
-              <a href="#!" class="text-dark">link</a>
-            </p>
-            <p>
-              <a href="#!" class="text-dark">link</a>
-            </p>
-          </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold">Exemplo 2</h6>
-            <hr
-                class="mb-4 mt-0 d-inline-block mx-auto"
-                style="width: 60px; background-color: #7c4dff; height: 2px"
-                />
-            <p>
-              <a href="#!" class="text-dark">link</a>
-            </p>
-            <p>
-              <a href="#!" class="text-dark">link</a>
-            </p>
-            <p>
-              <a href="#!" class="text-dark">link</a>
-            </p>
-            <p>
-              <a href="#!" class="text-dark">link</a>
-            </p>
-          </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold">Contactos</h6>
-            <hr
-                class="mb-4 mt-0 d-inline-block mx-auto"
-                style="width: 60px; background-color: #7c4dff; height: 2px"
-                />
-            <p><i class="fas fa-home mr-3"></i> morada</p>
-            <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
-            <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-            <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
-          </div>
-          <!-- Grid column -->
+<footer class="text-center text-lg-start text-dark mt-auto" style="background-color: #ECEFF1; font-size: 14px;">
+    <section class="d-flex justify-content-between p-4 text-white" style="background-color: #30c637; margin-bottom: 10px;">
+        <div class="me-5">
+            <span>Entidades Parceiras:</span>  (scrollzinho aqui de alguns logos dos fundadores)
         </div>
-        <!-- Grid row -->
-      </div>
     </section>
-    <!-- Section: Links  -->
-
-    <!-- Copyright -->
-    <div
-         class="text-center p-3"
-         style="background-color: rgba(0, 0, 0, 0.2)"
-         >
-      © 2023 Copyright Team B:
-      
+    <section class="mt-3"> <!-- Adjusted margin-top value -->
+        <div class="container text-center text-md-start">
+            <div class="row mt-3">
+                <h5>Contactos de Suporte</h5>
+                <ul class="list-unstyled" style="font-size: 12px;"> <!-- Adjusted font-size for the contact list -->
+                    <li>Suporte Informático: suporte@exemplo.com</li>
+                    <li>Coordenadora Geral: coordenadora@exemplo.com</li>
+                    <li>SAP Geral: SAP@exemplo.com</li>
+                    <!-- Add more contacts as needed -->
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2); font-size: 12px;"> <!-- Adjusted font-size for the footer text -->
+        © 2023 Copyright Team B:
     </div>
-    <!-- Copyright -->
-  </footer>
-  <!-- Footer -->
-</div>
-<!-- End of .container -->
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

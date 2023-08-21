@@ -5,10 +5,6 @@
     border-radius: 20px;
 }
 
-.custom-header-width {
-    max-width: 900px; /* You can adjust this value as needed */
-    margin: 0 auto; /* To center the header horizontally on the page */
-}
 
 .custom-logo {
     width: 300px; /* Set the desired width of the logo */
@@ -16,69 +12,116 @@
     padding: 10px;
 }
 
-/* Style the login button */
-.login-button {
-    padding: 10px 20px;
-    background-color: #30c637; /* You can use any color you prefer */
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.login-button:hover {
-    background-color: #1873d4; /* You can change the hover color if desired */
-}
-
-
- 
-/* NAVBAR*/
-
-.custom-navbar {
-    background-color: rgb(248, 246, 246);
-    border-radius: 10px;
-    padding: 10px;
-    margin-left: 290px; /* You can adjust the left margin as needed */
-    margin-top: 100px;
-    width: 200px; /* You can set the width of the navbar as desired */
-    height: 300px;
+.powered-by-logo {
     display: flex;
-    flex-direction: column;
+    padding: 10px;
+
+}
+
+.logosap-img {
+    width: 50px; /* Adjust the width to make the image smaller */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 10px; /* Add some spacing between text and image */
+
+}
+
+.powered-by-text {
+    font-weight: bold; /* Make the text bold */
+
+}
+
+
+/* INDEX WELCOME */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.custom-background-container {
+    background: url('images/index.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
     align-items: center;
-  }
-  
-  .custom-navbar .nav-item {
-    margin-bottom: 5px;
-  }
-  
-  .custom-navbar .nav-link {
-    color: #007bff; /* Set the desired link color */
-    border-radius: 5px;
-    padding: 5px 10px;
+    justify-content: center;
+    height: 100vh;
+}
+
+.welcome-header {
+    font-size: 70px; 
+}
+
+.custom-content {
     text-align: center;
-  }
-  
-  .custom-navbar .nav-link.active,
-  .custom-navbar .nav-link:hover {
-    background-color: #30c637; /* Set the background color for active and hover states */
-    color: #fff; /* Set the text color for active and hover states */
-  }
-  
+    color: white;
+    font-size: 20px;
+}
+
+.custom-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    background-color: #30c637;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.custom-btn:hover {
+    background-color: #17a2b8;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* FOOTER CONTENT */
+
+
+.partner-logo {
+    max-width: 100px; /* Adjust the size as needed */
+    height: auto;
+}
+
+/* Additional styles for Swiper */
+.swiper-container {
+    width: 100%;
+    padding-top: 20px; /* Adjust as needed */
+    padding-bottom: 20px; /* Adjust as needed */
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 /* LOGIN CONTAINER */
-.login-container {
+
+.centered-container {
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    flex-direction: column; /* Stack form elements vertically */
-    margin-left: 200px; /* You can adjust the left margin as needed */
-    border-radius: 10px;
-    margin-top: -320px;
-    max-width: 300px; /* You can set the maximum width of the container as desired */
-    padding: 20px; /* Add padding to the container to create space around the content */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Use min-height instead of height for responsiveness */
+    padding: 0 20px; /* Add horizontal padding to create space on the sides */
+    box-sizing: border-box; /* Include padding in total width/height calculations */
+    margin-top: -200px; /* Adjust the margin to bring the container closer to the navbar */
+    margin-bottom: -80px; /* Adjust the margin to bring the container closer to the footer */
+    margin-left: -100px;
 }
+
+.login-container {
+    max-width: 400px; /* Set a reasonable maximum width for the container */
+    width: 100%; /* Make sure the container takes full width of its parent */
+    padding: 20px; /* Add padding for spacing around the content */
+    text-align: center; /* Center text elements within the container */
+    border-radius: 10px;
+    background-color: #ffffff; /* Set a background color for the container */
+}
+
 
 .login-bg {
     background-color: #f5f5f5; /* Set the desired background color for the form background */
@@ -87,18 +130,6 @@
     margin-left: 200px; /* You can adjust the left margin as needed */
 }
 
-/* Style the form elements as needed */
-.form_login {
-    text-align: center; /* Center form elements within the form */
-}
-
-.logo {
-    /* Add styles for the logo image here */
-}
-
-.title {
-    /* Add styles for the title here */
-}
 
 /* Custom button styles */
 .btn-login {
@@ -112,23 +143,21 @@
 }
 
 .btn-login:hover {
-    background-color: #1873d4; /* You can change the hover color if desired */
+    background-color: #17a2b8; /* You can change the hover color if desired */
 }
 
 
 
 /* SIGNUP CONTAINER */
 .signup-container {
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    flex-direction: column; /* Stack form elements vertically */
-    margin-left: 800px; /* You can adjust the left margin as needed */
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
     border-radius: 10px;
-    margin-top: -300px;
-    max-width: 400px; /* You can set the maximum width of the container as desired */
-    padding: 20px; /* Add padding to the container to create space around the content */
-    background-color: #f5f5f5; /* Set the desired background color for the container */
+    background-color: #f5f5f5;
+    margin-left: auto; /* Center the container horizontally */
+    margin-right: auto;
 }
 
 .signup-bg {
@@ -140,13 +169,6 @@
     text-align: center; /* Center form elements within the form */
 }
 
-.logo {
-    /* Add styles for the logo image here */
-}
-
-.title {
-    /* Add styles for the title here */
-}
 
 /* Custom button styles */
 .btn-register {
@@ -160,6 +182,6 @@
 }
 
 .btn-register:hover {
-    background-color: #1873d4; /* You can change the hover color if desired */
+    background-color: #17a2b8; /* You can change the hover color if desired */
 }
 

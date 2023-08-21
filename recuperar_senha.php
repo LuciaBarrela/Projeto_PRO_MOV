@@ -42,18 +42,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 } else {
     // Formulário para redefinição de senha
     echo '
+    <div class="signup-container">
+    <div class="signup-bg">
     <form method="POST">
         <label for="email">Digite o seu endereço de e-mail:</label>
-        <input type="email" id="email" name="email" required><br>
+        <input type="email" id="email" name="email" required><br><br>
         
         <label for="codigo">Código de Segurança:</label>
-        <input type="text" name="codigo" required><br>
+        <input type="text" name="codigo" required><br><br>
         
         <label for="novaSenha">Nova Senha:</label>
-        <input type="password" name="novaSenha" required><br>
+        <input type="password" name="novaSenha" required><br><br>
 
-        <button type="submit" name="submit">Redefinir Senha</button>
-    </form>
+        <button type="submit" class="btn-register" name="submit">Redefinir Senha</button>
+    </form></div></div>
     ';
 }
 
