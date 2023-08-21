@@ -28,6 +28,8 @@ include "header.php";
         <button class="btn-login" type="submit"><span class="text-body">Entrar</span></button><br><br>
 
         Não tem uma conta? <a href="signup.php" class="lnow">Registe-se agora</a><br><br>
+        <a href="recuperar_senha.php">Esqueci-me da palavra passe</a>
+
     </form>
 </div>
 

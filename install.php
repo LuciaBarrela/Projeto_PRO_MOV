@@ -16,11 +16,22 @@ $ligacao = new PDO("mysql:dbname=$base_dados;host=$host", $user, $password);
 $sql_USER= "CREATE TABLE USER ( 
     id_user INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(255),
-    utilizador VARCHAR(25),
-    pass VARCHAR(255)
+    utilizador VARCHAR(150),
+    pass VARCHAR(255),
+    codigo_seguranca INT
     )";
 
 $motor = $ligacao->prepare($sql_USER);
+$motor->execute();
+
+$sql_password_reset_tokens= "CREATE TABLE password_reset_tokens (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    id_user INT NOT NULL,
+    token VARCHAR(64) NOT NULL,
+    FOREIGN KEY (id_user) REFERENCES USER(id_user)
+)";
+
+$motor = $ligacao->prepare($sql_password_reset_tokens);
 $motor->execute();
 
 $sql_LOGIN= "CREATE TABLE LOGIN (

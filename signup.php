@@ -7,6 +7,11 @@ unset($_SESSION['user']);
 
 include 'header.php';
 
+function gerarCodigoSeguranca() {
+    return mt_rand(100000, 999999);
+}
+
+
 // dados de utilizador - verificação
 if (!isset($_POST['btn_submit'])) {
     ApresentaFormulario();
@@ -33,6 +38,7 @@ function ApresentaFormulario()
 
             Já tem uma conta? <a href="index.php" class="lnow">Login</a><br><br>
         </form>
+        
     </div>
 </div>
     ';
@@ -85,8 +91,6 @@ function RegistarUtilizador()
 
     }
 
- 
-
     if ($erro) {
 
         ApresentaFormulario();
@@ -95,7 +99,7 @@ function RegistarUtilizador()
 
     }
 
- 
+    $codigoSeguranca = gerarCodigoSeguranca();
 
     // Processo do registo de um novo utilizador
 
@@ -128,10 +132,6 @@ function RegistarUtilizador()
         Já existe uma conta associada a este email!
 
       </div>';
-
- 
-
-      
 
         $ligacao = null;
 
@@ -169,7 +169,7 @@ function RegistarUtilizador()
 
  
 
-        $sql = "INSERT INTO USER VALUES (:id_user, :utilizador, :pass, :nome)";
+        $sql = "INSERT INTO USER VALUES (:id_user, :nome, :utilizador, :pass, :codigo)";
 
  
 
@@ -177,11 +177,14 @@ function RegistarUtilizador()
 
         $motor->bindParam(":id_user", $id_temp, PDO::PARAM_INT);
 
+        $motor->bindParam(":nome", $nome, PDO::PARAM_STR);
+
         $motor->bindParam(":utilizador", $utilizador, PDO::PARAM_STR);
 
         $motor->bindParam(":pass", $passwordEncriptada, PDO::PARAM_STR);
 
-        $motor->bindParam(":nome", $nome, PDO::PARAM_STR);
+        $motor->bindParam(":codigo", $codigoSeguranca, PDO::PARAM_INT);
+
 
 
         $motor->execute();
@@ -192,22 +195,17 @@ function RegistarUtilizador()
 
         // Apresentar mensagem de boas vindas
 
-        echo '
 
-            <div class="novo_registo_sucesso">
 
-                    <div class="titulo">
-
-                    <h3 class="titulo-texto">Bem-vindo, <strong>'.$nome.'</strong></h3>
-
-                        <img class="logo" src="images/logo.webp" alt="Logo">
-
-                        <a class= "avancar"href = "login.php">Login</a>
-
-                    </div>
-
-                </div>
-
+        echo '<div class="novo_registo_sucesso">
+        <div class="titulo">
+            <h3 class="titulo-texto">Bem-vindo, <strong>'.$nome.'</strong></h3>
+            <img class="logo" src="images/logo.webp" alt="Logo">
+            <a class= "avancar"href = "login.php">Login</a>
+            <br>
+            Código de Segurança: ' . $codigoSeguranca . '
+        </div>
+    
         ';
 
     }
